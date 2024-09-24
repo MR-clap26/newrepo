@@ -1,2 +1,0 @@
-# newrepo
-pueba &amp; error
