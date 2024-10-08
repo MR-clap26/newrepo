@@ -1,6 +1,5 @@
 class libro:
-
-    def _int_(self,isbn,titulo,autor ):
-        self._isbn=isbn
-        self._titulo=titulo
-        self._autor=autor
+    def _init_(self,isbn,titulo,autor):
+        self.isbn=isbn
+        self.titulo=titulo
+        self.autor=autor
