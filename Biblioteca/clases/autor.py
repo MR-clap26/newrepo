@@ -1,10 +1,12 @@
-class autor:
-    def _init_(self,id_autor,nombre,ap_paterno,ap_materno,fech_nac,pais_origen):
-        self.id_autor= id_autor
-        self.nombre=nombre
-        self.ap_paterno=ap_paterno
-        self.ap_materno=ap_materno
-        self.fech_nac=fech_nac
-        self.pais_origen=pais_origen
+import  paises   #-----> calse padre
 
-    
+class Autor(paises):    #----->calse hija (Herencia) 
+    def __init__(self,id_autor,nom_autor,seudonimo,id_pais , fecha_nac, fecha_def, biografia_autor):
+        super().__init__(id_pais)  
+        self.id_autor = id_autor
+        self.nom_autor = nom_autor
+        self.seudonimo = seudonimo
+        self.fecha_nac = fecha_nac
+        self.fecha_def = fecha_def
+        self.biografia_autor = biografia_autor
+            
