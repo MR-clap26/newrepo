@@ -1,11 +1,9 @@
 
-
-
 import detalle_libro
 import usuario
 
 class Prestamo(detalle_libro, usuario):
-    def __init__(self, id_prestamo, isbn, id_user, fecha_prestamo, fecha_devolucion, fecha_devuelto, cantidad):
+    def __init__(self, id_prestamo, isbn, id_user, fecha_prestamo, fecha_devolucion, fecha_devuelto, cantidad): # <---encapsulamiento atributos en el constructor
         detalle_libro.__init__(isbn)
         usuario.__init__(id_user)
         self.id_prestamo = id_prestamo
